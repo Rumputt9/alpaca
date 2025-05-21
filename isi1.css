@@ -8,6 +8,7 @@
 .isi1 {
   display: flex;
   min-height: 100vh;
+  
 }
 .isi1-sub {
   width: 100%;
@@ -15,9 +16,12 @@
   align-items: flex-start;
   justify-content: space-between;
   max-width: 90%;
-  margin-top: 7%;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  padding-top: 7%;
+  margin-top: 0;
+  margin-left: 5%;
+  margin-right:5%;
+  border: var(--border);
+ 
 }
 .kata1 {
   transition: transform 0.3s ease;
@@ -94,6 +98,9 @@
   font-size: 3rem;
 }
 @media (max-width: 870px) {
+  .isi1-sub{
+    padding-top: 13%;
+  }
   .kata1 {
     margin-left: 0rem;
     border-radius: 2rem;
@@ -116,4 +123,8 @@
     background-color: #004102b3;
     border-radius: 3rem;
   }
+   .kata1 p{
+    margin: 0;
+    font-size: 210%;
+   }
 }
